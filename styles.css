@@ -14,6 +14,10 @@ body{
     border-bottom: black 1px solid;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0%;
+    background-color:wheat;
+    z-index: 1;
 }
 .navbar--s1__title{
     color: blueviolet;
@@ -33,6 +37,7 @@ body{
     outline: none;
     width: 100%;
     font-size: 15px;
+    background-color: transparent;
 }
 
 
@@ -45,6 +50,24 @@ body{
     display: flex;
     gap: 15px;
 }
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+.mylearning__popup{
+position: absolute;
+border: 1px solid black;
+background-color: white;
+width: 100px;
+top: 150%;
+right: 0%;
+padding: 20px;
+display: none;
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
+}
+
 
 .categories {
     justify-content: space-around;
@@ -64,6 +87,18 @@ body{
 
 .sale-image img {
     width: 100%;
+    position: relative;
+}
+
+.sale-image__text{
+    background-color: blanchedalmond;
+    position: absolute;
+    top: 40%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .course-card {
